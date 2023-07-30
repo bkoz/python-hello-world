@@ -19,4 +19,5 @@ python hello-elastic.py
 ```
 
 gpgtest-02
+test02
 
