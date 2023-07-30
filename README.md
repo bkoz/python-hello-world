@@ -13,4 +13,3 @@ export ELASTIC_PASSWORD=
 python hello-elastic.py
 ```
 
-- gpgtest-03
