@@ -1,0 +1,13 @@
+ind: ConfigMap
+apiVersion: v1
+metadata:
+  name: my-env-vars
+  labels:
+    controller.devfile.io/mount-to-devworkspace: 'true'
+    controller.devfile.io/watch-configmap: 'true'
+  annotations:
+    controller.devfile.io/mount-as: env
+data:
+  ELASTIC_HOST: elastic_host
+  ELASTIC_USER: elastic
+  ELASTIC_PASSWORD: elastic_password
