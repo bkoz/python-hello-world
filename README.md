@@ -13,4 +13,4 @@ export ELASTIC_PASSWORD=
 python hello-elastic.py
 ```
 
-v0.1
+v0.2
