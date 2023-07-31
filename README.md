@@ -13,7 +13,3 @@ export ELASTIC_PASSWORD=
 ```
 python hello-elastic.py
 ```
-
-### Testing
-
-gpgtest-02
