@@ -16,4 +16,4 @@ python hello-elastic.py
 
 ### Testing
 
-gpgtest-01
+gpgtest-02
