@@ -1,28 +1,23 @@
-# Sample ElasticSearch Python client
+# A sample ElasticSearch Python client using Openshift DevSpaces
 
 ## Environment Variables
 
-Set the following environment variables via shell or ConfigMap:
-
-Example ConfigMap
+Set the following environment variables via terminal shell or ConfigMap:
 
 ```
-kind: ConfigMap
-apiVersion: v1
-metadata:
-  name: my-env-vars
-  labels:
-    controller.devfile.io/mount-to-devworkspace: 'true'
-    controller.devfile.io/watch-configmap: 'true'
-  annotations:
-    controller.devfile.io/mount-as: env
-data:
-  ELASTIC_HOST: elastic-host
-  ELASTIC_USER: elastic-user
-  ELASTIC_PASSWORD: elastic-passwd
+ELASTIC_HOST
+ELASTIC_USER
+ELASTIC_PASSWORD
 ```
 
-Run the test client.
+The [env-vars file](env-vars.yaml) contains an example ConfigMap. The ConfigMap can be created using either the Openshift console or CLI. 
+
+CLI example:
+```
+oc apply -f env-vars.yaml -n <login-devspaces>
+```
+
+Run the [hello-elastic.py](hello-elastic.py) file from the *run* button in VSCode or the terminal shell.
 
 ```
 python hello-elastic.py
